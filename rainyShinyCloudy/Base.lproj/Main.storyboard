@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCV-EI-4ct">
-                                <rect key="frame" x="-4" y="0.0" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DM9-bg-ui4">
                                         <rect key="frame" x="16" y="30" width="343" height="250"/>
@@ -161,10 +161,10 @@
                         <constraints>
                             <constraint firstItem="oCV-EI-4ct" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ce9-1X-2oH"/>
                             <constraint firstItem="mYk-cD-rVX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H17-Lk-32o"/>
-                            <constraint firstItem="oCV-EI-4ct" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-4" id="IBh-SQ-dm5"/>
+                            <constraint firstItem="oCV-EI-4ct" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IBh-SQ-dm5"/>
                             <constraint firstItem="mYk-cD-rVX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qs2-ak-fcs"/>
                             <constraint firstItem="mYk-cD-rVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RFV-Kh-cls"/>
-                            <constraint firstItem="oCV-EI-4ct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-4" id="SbY-CP-Wza"/>
+                            <constraint firstItem="oCV-EI-4ct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SbY-CP-Wza"/>
                             <constraint firstItem="mYk-cD-rVX" firstAttribute="top" secondItem="oCV-EI-4ct" secondAttribute="bottom" id="amr-XF-UUT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

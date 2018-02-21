@@ -27,6 +27,7 @@ class WeatherVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
             self.currentTempLbl.text = "\(self.currentweather.currentTemp)"
             self.currentWheatherTypeLbl.text = self.currentweather.weatherType
             self.dateLbl.text = self.currentweather.date
+            self.currentWeatherImage.image = UIImage(named: self.currentweather.weatherType)
         }
     }
 
@@ -41,5 +42,7 @@ class WeatherVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         return cell
     }
+    
+    
 }
 
