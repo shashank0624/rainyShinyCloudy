@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="85" id="YSv-Ji-h4y">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="85" id="YSv-Ji-h4y" customClass="WeatherCell" customModule="rainyShinyCloudy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YSv-Ji-h4y" id="bMk-76-CuJ">
@@ -99,11 +99,11 @@
                                                         <constraint firstAttribute="width" secondItem="io9-hI-6mR" secondAttribute="height" multiplier="1:1" id="lLH-9Z-E8J"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-Fi-Vgg">
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-Fi-Vgg">
                                                     <rect key="frame" x="85" y="12.5" width="270" height="60"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eaS-2C-QoL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="101.5" height="60"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="185.5" height="60"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQF-6o-aGc">
                                                                     <rect key="frame" x="0.0" y="0.0" width="98" height="27.5"/>
@@ -120,16 +120,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qk4-vz-nEy">
-                                                            <rect key="frame" x="168.5" y="0.0" width="101.5" height="60"/>
+                                                            <rect key="frame" x="185.5" y="0.0" width="84.5" height="60"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80.5°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUG-Om-dHv">
-                                                                    <rect key="frame" x="57" y="0.0" width="44.5" height="27.5"/>
+                                                                    <rect key="frame" x="40" y="0.0" width="44.5" height="27.5"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65.2°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5z-Ro-9TS">
-                                                                    <rect key="frame" x="57" y="32.5" width="44.5" height="27.5"/>
+                                                                    <rect key="frame" x="40" y="32.5" width="44.5" height="27.5"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -149,6 +149,13 @@
                                                 <constraint firstItem="aeu-Fi-Vgg" firstAttribute="top" secondItem="io9-hI-6mR" secondAttribute="top" id="tTi-B2-ZSZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dayTimeLbl" destination="RQF-6o-aGc" id="uF1-5j-cAZ"/>
+                                            <outlet property="maxTempLbl" destination="HUG-Om-dHv" id="TFQ-Xx-k1l"/>
+                                            <outlet property="minTempLbl" destination="C5z-Ro-9TS" id="wqg-QA-ben"/>
+                                            <outlet property="weatherTypeImageView" destination="io9-hI-6mR" id="Ikj-JP-Lts"/>
+                                            <outlet property="weatherTypeLbl" destination="Wc4-GL-Xth" id="Co5-uY-mEl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
